@@ -266,9 +266,9 @@ a {
     margin-bottom: 50px
 }
 
-.product-grid {
+.product-showcase {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr);
     gap: 18px
 }
 
@@ -335,15 +335,47 @@ a {
     color: #ecfff8
 }
 
-.mesero {
-    background: radial-gradient(circle at 78% 75%, rgba(255, 158, 75, .2), transparent 35%), linear-gradient(160deg, #2a1408, #613313);
-    color: #fff6ed
+.future-directions {
+    border-radius: var(--radius);
+    padding: 34px;
+    background: #fff;
+    border: 1px solid #dfe5ea;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
 }
 
-.menuza {
-    background: radial-gradient(circle at 80% 20%, rgba(214, 228, 122, .3), transparent 30%), linear-gradient(160deg, #f4efe2, #fffdf7);
-    color: #1b221a;
-    border: 1px solid rgba(27, 34, 26, .08)
+.future-directions h3 {
+    margin: 8px 0 16px;
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+    line-height: 1.05;
+    letter-spacing: -.04em
+}
+
+.future-directions>p:not(.eyebrow),
+.future-directions small {
+    color: #63707c;
+    line-height: 1.65
+}
+
+.direction-list {
+    display: grid;
+    margin: 28px 0;
+    border-top: 1px solid #dfe5ea
+}
+
+.direction-list div {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 10px;
+    padding: 17px 0;
+    border-bottom: 1px solid #dfe5ea
+}
+
+.direction-list span {
+    color: #63707c;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .8rem
 }
 
 .mini-device {
@@ -360,10 +392,6 @@ a {
 
 .setta .mini-device {
     background: linear-gradient(#121a1f 0 0) top/100% 11% no-repeat, repeating-linear-gradient(to bottom, #101a18 0 34px, #17352e 35px 36px)
-}
-
-.menuza .mini-device {
-    background: linear-gradient(#fff 0 0) top/100% 13% no-repeat, repeating-linear-gradient(to bottom, #fffaf0 0 52px, #efe7d4 53px 54px)
 }
 
 .values {
@@ -512,7 +540,7 @@ a {
         grid-template-columns: 1fr
     }
 
-    .product-grid {
+    .product-showcase {
         grid-template-columns: 1fr
     }
 
