@@ -1,0 +1,7 @@
+{
+  "method": "ssh",
+  "ssh_alias": "hostinger-site",
+  "web_root": "/PREENCHER/caminho/public_html",
+  "verification_url": "https://varten.com.br/release-version.json",
+  "timeout_seconds": 300
+}
