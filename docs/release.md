@@ -76,7 +76,7 @@ Não use uma publicação Git que exponha o repositório inteiro na pasta públi
 ## Site estático
 
 Não há build Node. O artefato contém `index.html`, `style.css`, `script.js`,
-pastas `assets`, `images`, `fonts` quando existirem e `.htaccess` quando existir.
+pastas `assets`, `images`, `fonts`, `trackfit` e `equipe` quando existirem e `.htaccess` quando existir.
 Se adicionar assets em outra pasta, atualize a lista no script antes de publicar.
 Confira todos os links, imagens e formulários na versão hospedada.
 

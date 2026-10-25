@@ -31,7 +31,8 @@ Abra `http://127.0.0.1:5500`. Não há instalação de dependências nem build.
 ## Arquivos
 
 - `index.html`: conteúdo, navegação, apresentação do produto e contato.
-- `style.css`: identidade visual e layouts responsivos.
+- `equipe/index.html`: apresentação da equipe, acessível pelo rodapé.
+- `style.css`: identidade visual, animação da abertura e layouts responsivos.
 - `script.js`: menu mobile, seção ativa, cabeçalho e ano do rodapé.
 - `assets/logo-varten.png`: imagem original fornecida para a marca.
 - `assets/logo-varten-transparent.png`: símbolo isolado com transparência.
@@ -56,3 +57,5 @@ O pacote do site inclui `assets/`. Configure a hospedagem antes da publicação.
 ## TrackFit
 
 O diretório trackfit/ contém a versão estática completa do site e da demonstração local, com logo de infinito e o carrossel de atividades. Os links do produto usam /trackfit/ para não depender de um novo subdomínio. O pacote de release inclui essa pasta. Isso prepara a publicação na mesma hospedagem da Varten, sem alteração automática de DNS. Não houve publicação na Hostinger nesta execução. A versão já hospedada privadamente no ChatGPT Sites continua independente.
+
+A equipe fica em `/equipe/`, fora da página inicial e do menu principal. A ilustração da abertura tem flutuação suave, controle de pausa e respeita `prefers-reduced-motion`. A referência de produto usa TrackFit; as imagens ilustrativas continuam provisórias.

@@ -29,3 +29,19 @@ Sobre a Varten: substituída a marca ampliada por painel editorial de duas frent
 Botão de projeto na seção Soluções abre mailto diretamente. Equipe e link do portfólio ficam para próxima etapa, com dados reais do responsável. Produtos e abordagem preservados.
 
 Ajuste posterior: painel das duas frentes removido por redundância, conforme comentário do usuário. Sobre a Varten agora usa texto centralizado em uma coluna. Adicionados menu e seção Equipe e link no rodapé; nome, biografia e URL do portfólio ainda aguardam definição. Estrutura conferida em desktop e tela estreita, sem overflow.
+
+
+## Ajustes de 25/10/2026
+
+Equipe retirada da home e da navegação principal. O link Equipe permanece
+no rodapé e abre /equipe/, com a apresentação e o portfólio já existentes.
+A apresentação do produto usa TrackFit, incluindo o marcador da ficha ilustrativa
+e o nome interno da classe do wordmark. Prints reais ficam para uma próxima etapa.
+A imagem original de computadores na abertura ganhou flutuação de 9 segundos,
+com deslocamento vertical de até 9px e rotação de 0,35 grau. Controle de pausa,
+pausa fora da área visível/aba oculta e suporte a prefers-reduced-motion.
+O pacote de publicação passou a incluir a página equipe/.
+
+Transição entre a abertura escura e Soluções sob medida suavizada com degradê azul até o fundo claro. Faixa responsiva de 72 a 112px, sem sobrepor texto. Conferida na prévia local, sem overflow.
+
+Refino da transição: faixa ampliada para 180–280px, começando com transparência sobre o azul original e sobreposição de 24px. Tons azuis ganham opacidade gradualmente até o fundo claro, removendo a emenda escura percebida no primeiro degradê.

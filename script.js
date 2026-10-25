@@ -50,3 +50,32 @@ if ('IntersectionObserver' in window) {
   }, { rootMargin: '-20% 0px -45% 0px', threshold: 0 });
   document.querySelectorAll('main section[id]').forEach((section) => observer.observe(section));
 }
+
+// Pause decorative motion when it is not visible or the visitor requests it.
+const heroArt = document.querySelector('.hero-art');
+const motionButton = document.getElementById('heroMotionToggle');
+if (heroArt && motionButton) {
+  let userPaused = false;
+  let heroVisible = true;
+  function updateMotion() {
+    heroArt.classList.toggle('motion-paused', userPaused || !heroVisible || document.hidden);
+    motionButton.classList.toggle('is-paused', userPaused);
+    const label = userPaused ? 'Retomar animação' : 'Pausar animação';
+    motionButton.setAttribute('aria-label', label);
+    motionButton.title = label;
+  }
+  motionButton.hidden = false;
+  motionButton.addEventListener('click', () => {
+    userPaused = !userPaused;
+    updateMotion();
+  });
+  document.addEventListener('visibilitychange', updateMotion);
+  if ('IntersectionObserver' in window) {
+    const motionObserver = new IntersectionObserver(([entry]) => {
+      heroVisible = entry.isIntersecting;
+      updateMotion();
+    });
+    motionObserver.observe(heroArt);
+  }
+  updateMotion();
+}
