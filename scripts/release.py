@@ -179,7 +179,7 @@ def main():
             # Publish only web assets: exclude docs, interviews, repo metadata and scripts.
             for filename in ('index.html', 'style.css', 'script.js'):
                 shutil.copy2(work / filename, artifact / filename)
-            for directory in ('assets', 'images', 'fonts'):
+            for directory in ('assets', 'images', 'fonts', 'trackfit'):
                 if (work / directory).is_dir():
                     shutil.copytree(work / directory, artifact / directory)
             if (work / '.htaccess').is_file():

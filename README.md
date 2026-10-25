@@ -1,7 +1,7 @@
 # Varten — site institucional
 
 Site estático em português para apresentar a Varten, seu posicionamento no
-desenvolvimento sob medida para empresas, produtos próprios (como o Setta) e contato para projetos.
+desenvolvimento sob medida para empresas, produtos próprios (como o TrackFit) e contato para projetos.
 
 ## Identidade visual
 
@@ -17,7 +17,7 @@ A direção principal segue a referência `ideia_site4`: abertura escura com
 ilustração de tecnologia, seções claras, faixa de princípios e contato.
 O registro de direção e o prompt da ilustração estão em `docs/visual-direction.md`.
 
-A apresentação do Setta usa uma superfície clara e seus tons lime. O produto é
+A apresentação do TrackFit usa uma superfície clara e seus tons lime. O produto é
 identificado como em desenvolvimento; a ficha exibida é uma ilustração do conceito.
 
 ## Executar localmente
@@ -52,3 +52,7 @@ Fluxo `dev → prod`, plano, validação e publicação em `docs/release.md`.
 ```
 
 O pacote do site inclui `assets/`. Configure a hospedagem antes da publicação.
+
+## TrackFit
+
+O diretório trackfit/ contém a versão estática completa do site e da demonstração local, com logo de infinito e o carrossel de atividades. Os links do produto usam /trackfit/ para não depender de um novo subdomínio. O pacote de release inclui essa pasta. Isso prepara a publicação na mesma hospedagem da Varten, sem alteração automática de DNS. Não houve publicação na Hostinger nesta execução. A versão já hospedada privadamente no ChatGPT Sites continua independente.

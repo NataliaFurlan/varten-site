@@ -323,3 +323,6 @@ h2 span { color:var(--blue-ink); }
 .team-profile > p:not(.eyebrow) { color:var(--muted); font-size:14px; line-height:1.8; margin-bottom:24px; }
 @media(max-width:900px) { .team-layout { grid-template-columns:1fr; gap:30px; } }
 @media(max-width:600px) { .team-profile { padding-left:20px; } }
+
+/* Identidade do produto TrackFit, preservando a marca Varten. */
+.setta-wordmark{color:#101b35}.product-card .button-dark{background:#101b35;color:#ff9854}
